@@ -1,0 +1,12 @@
+{
+  "domain": "xiaomi_cloud",
+  "name": "Xiaomi Cloud",
+  "documentation": "https://github.com/MagicStarTrace/xiaomi-cloud",
+  "issue_tracker": "https://github.com/MagicStarTrace/xiaomi-cloud/issues",
+  "dependencies": [],
+  "iot_class": "cloud_polling",
+  "version": "2025.4.22",
+  "config_flow": true,
+  "codeowners": ["@agicStarTrace"],
+  "requirements": []
+}

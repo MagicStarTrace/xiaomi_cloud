@@ -1,0 +1,35 @@
+{
+    "config": {
+        "title": "Xiaomi Cloud",
+        "step": {
+            "user": {
+                "title": "Xiaomi Cloud",
+                "description": "If you need help with the configuration have a look here: https://github.com/MagicStarTrace/xiaomi-cloud",
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                }
+            }
+        },
+        "error": {
+            "get_sign_failed": "Get sign failed",
+            "login_url_failed": "Login failed",
+            "login_mi_cloud_failed": "Login xiaomi cloud failed",
+            "get_device_failed": "Get device failed"
+        },
+        "abort": {
+            "single_instance_allowed": "Only a single configuration of Colorfulclouds Weather is allowed.",
+            "already_configured": "This is already configured."
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "data": {
+                    "scan_interval": "Scan interval",
+                    "coordinate_type": "Coordinate type"
+                }
+            }
+        }
+    }
+}

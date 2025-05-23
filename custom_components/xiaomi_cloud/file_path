@@ -1,0 +1,36 @@
+async def _refresh_address(self):
+    """
+    Example: If your device_tracker stores 'device_lat'/'device_lon' in coordinator.data[i].
+    For simplicity, we just check the first item for demonstration. 
+    Adjust logic if you have multiple devices.
+    """
+    data = self._coordinator.data
+    if not isinstance(data, list) or len(data) < 1:
+        _LOGGER.debug("No valid device list or empty: %s", data)
+        # 不再重置 self._state，让它保留旧的地址
+        return
+    
+    device_data = data[0]
+    lat = device_data.get("device_lat")
+    lon = device_data.get("device_lon")
+    if not (lat and lon and self._gaode_key):
+        _LOGGER.debug("No lat/lon or gaode_key found. lat=%s lon=%s key_ok=%s",
+                      lat, lon, bool(self._gaode_key))
+        # 同样在这里仅 return，不清空 self._state
+        return
+
+    url = "https://restapi.amap.com/v3/geocode/regeo"
+    params = {"location": f"{lon},{lat}", "key": self._gaode_key}
+
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, params=params) as resp:
+                if resp.status == 200:
+                    js = await resp.json()
+                    address = js.get("regeocode", {}).get("formatted_address")
+                    self._state = address
+                    _LOGGER.debug("Got address from Gaode: %s", address)
+                else:
+                    _LOGGER.warning("Gaode API returned %s", resp.status)
+    except Exception as ex:
+        _LOGGER.exception("Error updating address via Gaode API: %s", ex) 
