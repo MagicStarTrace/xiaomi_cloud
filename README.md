@@ -89,15 +89,9 @@
 
 ---
 
-[commits-shield]: https://img.shields.io/github/commit-activity/y/MagicStarTrace/xiaomi-cloud.svg
-[commits]: https://github.com/MagicStarTrace/xiaomi-cloud/commits/master
-[hacs-shield]: https://img.shields.io/badge/HACS-Default-orange.svg
-[hacs]: https://github.com/hacs/integration
-[license-shield]: https://img.shields.io/github/license/MagicStarTrace/xiaomi-cloud.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
-[releases-shield]: https://img.shields.io/github/release/MagicStarTrace/xiaomi-cloud.svg
-[releases]: https://github.com/MagicStarTrace/xiaomi-cloud/releases
-[user]: https://github.com/MagicStarTrace
-[stars-shield]: https://img.shields.io/github/stars/MagicStarTrace/xiaomi-cloud.svg
-[stars]: https://github.com/MagicStarTrace/xiaomi-cloud/stargazers
-[followers-shield]: https://img.shields.io/github/followers/MagicStarTrace.svg 
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/Initialisation-log.jpg)
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/Add-Integration.jpg)
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/User-Added.jpg)
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/Muran-map.jpg)
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/WGS84toGCJ-02-resolved-address-entities.jpg)
+![截图](https://raw.githubusercontent.com/MagicStarTrace/xiaomi_cloud/refs/heads/master/Unable-Get-Address.jpg)
