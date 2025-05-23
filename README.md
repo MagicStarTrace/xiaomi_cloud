@@ -1,13 +1,5 @@
 # 小米云集成 (Xiaomi Cloud Integration) for Home Assistant
 
-[![HACS Default][hacs-shield]][hacs]
-[![GitHub Release][releases-shield]][releases]
-[![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE)
-
-![Project Maintenance][maintenance-shield]
-[![GitHub followers][followers-shield]][user]
-[![GitHub stars][stars-shield]][stars]
 
 > Home Assistant自定义组件，用于小米云服务集成
 
@@ -66,7 +58,7 @@
 2. 在HACS中添加此仓库作为自定义仓库：
    - 进入HACS > 集成
    - 点击右上角的三个点，选择"自定义仓库"
-   - 添加URL `https://github.com/MagicStarTrace/xiaomi-cloud`，类别选择"Integration"
+   - 添加URL `https://github.com/MagicStarTrace/xiaomi_cloud`，类别选择"Integration"
 3. 在HACS中搜索"Xiaomi Cloud"并安装
 4. 重启Home Assistant
 
