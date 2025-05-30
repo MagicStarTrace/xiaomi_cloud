@@ -7,6 +7,6 @@
   "iot_class": "cloud_polling",
   "version": "2025.4.22",
   "config_flow": true,
-  "codeowners": ["@agicStarTrace"],
+  "codeowners": ["@magicStarTrace"],
   "requirements": []
 }
